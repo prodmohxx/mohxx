@@ -187,3 +187,16 @@ footer .social-icons a:hover {
   margin: 1rem auto 0;
   line-height: 1.5;
 }
+
+.logo-name {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: red;
+  letter-spacing: 0.2rem;
+}
+
+body {
+  background: url('background-edited.jpg') no-repeat center center fixed;
+  background-size: cover;
+}

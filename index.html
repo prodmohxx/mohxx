@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +8,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: 'Anton', sans-serif;
-      background-color: #0e0e0e;
+      background-color: #000;
       color: white;
-      scroll-behavior: smooth;
     }
-
     header {
       position: fixed;
       top: 0;
@@ -22,42 +24,37 @@
       padding: 1rem;
       z-index: 10;
     }
-
     header nav a {
       color: white;
       margin-left: 1rem;
       text-decoration: none;
       font-size: 0.9rem;
     }
-
     .hero {
       height: 100vh;
-      background-image: url('your-background-image.jpg');
-      background-size: cover;
-      background-position: center;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      background-color: #000;
+      transition: all 0.6s ease-in-out;
     }
-
     .hero h1 {
-      font-size: 4rem;
+      font-size: 5rem;
       color: red;
       margin: 0;
       letter-spacing: 3px;
+      font-weight: bold;
     }
-
     section {
       padding: 4rem 2rem;
       text-align: center;
+      transition: all 0.6s ease-in-out;
     }
-
     .subscribe {
       background-color: #a42b1f;
       padding: 3rem 1rem;
     }
-
     .subscribe input[type="text"],
     .subscribe input[type="email"] {
       padding: 0.75rem;
@@ -68,7 +65,6 @@
       color: white;
       font-size: 1rem;
     }
-
     .subscribe button {
       padding: 0.75rem 1.5rem;
       background: transparent;
@@ -77,7 +73,6 @@
       font-weight: bold;
       cursor: pointer;
     }
-
     .footer {
       background-color: black;
       padding: 2rem 1rem;
@@ -85,24 +80,21 @@
       font-family: 'Arial', sans-serif;
       font-size: 0.85rem;
     }
-
     .footer .label {
-      font-size: 1rem;
+      font-size: 1.2rem;
       letter-spacing: 1px;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
     }
-
     .footer .legal {
       text-transform: uppercase;
       color: #aaa;
-      line-height: 1.5;
-      font-size: 0.8rem;
+      line-height: 1.7;
+      font-size: 0.9rem;
     }
-
     .footer .social-icons {
       margin-top: 1rem;
     }
-
     .footer .social-icons a {
       margin: 0 0.5rem;
       color: white;
@@ -123,7 +115,7 @@
   </header>
 
   <div class="hero">
-    <h1>M△H XX</h1>
+    <h1>M&#x25B3;H XX</h1>
   </div>
 
   <section id="videos">
@@ -153,7 +145,7 @@
       <button onclick="document.getElementById('terms').style.display='block'">TERMS</button>
     </div>
     <div id="terms" style="display:none;margin-top:1rem;">
-      <p>By submitting my information, I agree to receive updates from M△H XX and UNFAZED FOREVER RECORDS © UFF.</p>
+      <p>By submitting my information, I agree to receive personalized updates and marketing messages about UFF RECORDS based on my information, interests, activities, website visits and device data and in accordance with the privacy policy.</p>
     </div>
   </section>
 

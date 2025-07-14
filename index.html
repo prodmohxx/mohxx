@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +15,24 @@
       color: white;
       scroll-behavior: smooth;
     }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: black;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .nav-icons a {
+      margin: 0 10px;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+    }
     .hero {
       background: #000;
       display: flex;
@@ -27,14 +46,20 @@
     .logo-triangle {
       display: flex;
       align-items: center;
+      flex-direction: column;
     }
-    .triangle {
-      width: 0;
-      height: 0;
-      border-left: 65px solid transparent;
-      border-right: 65px solid transparent;
-      border-bottom: 130px solid red;
-      margin: 0 15px;
+    .triangle-img {
+      width: 150px;
+      height: auto;
+      margin: 15px 0;
+    }
+    section {
+      padding: 100px 20px;
+    }
+    .section {
+      background: #111;
+      color: white;
+      text-align: center;
     }
     .newsletter {
       background: #a32f23;
@@ -46,6 +71,8 @@
       margin: 5px;
       border: none;
       width: 180px;
+      background: black;
+      color: white;
     }
     .newsletter button {
       padding: 10px 20px;
@@ -96,15 +123,40 @@
   </style>
 </head>
 <body>
-  <section class="hero">
+  <header>
+    <div style="font-size: 1.5rem; font-weight: bold; color: red;">M△H XX</div>
+    <div class="nav-icons">
+      <a href="#music">Music</a>
+      <a href="#videos">Videos</a>
+      <a href="#merch">Merch</a>
+      <a href="#newsletter">Newsletter</a>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
     <div class="logo-triangle">
       <span style="font-size:6rem; font-weight: bold;">M</span>
-      <div class="triangle"></div>
+      <img src="pyramid.png" alt="Triangle" class="triangle-img" />
       <span style="font-size:6rem; font-weight: bold;">H XX</span>
     </div>
   </section>
 
-  <section class="newsletter">
+  <section id="music" class="section">
+    <h2>Music</h2>
+    <p>Stream or buy music via Spotify, Apple Music and more.</p>
+  </section>
+
+  <section id="videos" class="section">
+    <h2>Videos</h2>
+    <p>Watch official music videos and performances.</p>
+  </section>
+
+  <section id="merch" class="section">
+    <h2>Merch</h2>
+    <p>Shop official merch — cassettes, vinyls, and more.</p>
+  </section>
+
+  <section id="newsletter" class="newsletter">
     <h2 style="color: black; font-size: 22px; font-weight: bold;">BE THE FIRST TO KNOW ABOUT TOUR DATES, NEW MUSIC, AND SPECIAL ANNOUNCEMENTS.</h2>
     <form>
       <input type="text" placeholder="Name" />

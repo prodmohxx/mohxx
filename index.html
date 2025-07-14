@@ -18,7 +18,7 @@
   </nav>
 
   <header class="hero">
-    <h1>prodmohxx</h1>
+    <h1>MV&#9651; XX</h1>
     <p>the wave is coming...</p>
   </header>
 
@@ -27,14 +27,33 @@
     <p>Tracks and albums will appear here with Linkfire links.</p>
   </section>
 
-  <section id="newsletter">
-    <h2>Stay Updated</h2>
-    <p>Sign up to be the first to hear new music, merch drops & more.</p>
-    <form action="#" method="POST" class="newsletter-form">
-      <input type="email" placeholder="your@email.com" name="email" required />
-      <button type="submit"><i class="fas fa-heart"></i> Join</button>
-    </form>
-  </section>
+  
+
+<section id="newsletter">
+  <h2 class="subscribe-heading">BE THE FIRST TO KNOW ABOUT TOUR DATES, NEW MUSIC,<br>AND SPECIAL ANNOUNCEMENTS.</h2>
+  <form action="#" method="POST" class="subscribe-form">
+    <input type="email" placeholder="Email Address" name="email" />
+    <button type="submit">SUBSCRIBE</button>
+  </form>
+  
+<a href="javascript:void(0);" class="terms-link" onclick="toggleTerms()">TERMS</a>
+<div id="terms-text" class="terms-text" style="display:none;">
+  <p>By submitting my information, I agree to receive personalized updates and marketing messages about MVH XX and UNFVZED FOREVER RECORDS UFF © based on my information, interests, and activity, and in accordance with the privacy policy.</p>
+</div>
+<script>
+  function toggleTerms() {
+    var x = document.getElementById("terms-text");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+
+</section>
+
+
 
   <section id="videos">
     <h2>Music Videos</h2>

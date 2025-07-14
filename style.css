@@ -126,3 +126,64 @@ footer .social-icons a:hover {
 .main-nav a:hover {
   color: #e50914;
 }
+
+#newsletter {
+  background-color: #a63227;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.subscribe-heading {
+  font-size: 1.4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 1rem;
+  border: none;
+  font-size: 1rem;
+  flex: 1;
+  background: #000;
+  color: #fff;
+}
+
+.subscribe-form button {
+  padding: 1rem 2rem;
+  background: #a63227;
+  border: 2px solid #000;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.terms-link {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.terms-text {
+  color: #000;
+  font-size: 0.9rem;
+  max-width: 600px;
+  margin: 1rem auto 0;
+  line-height: 1.5;
+}

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background: #0a0a0a;
@@ -51,24 +55,31 @@ section {
 }
 
 .newsletter-form input[type="email"] {
-  padding: 0.75rem;
+  padding: 0.8rem 1rem;
+  border-radius: 25px;
   border: none;
-  width: 250px;
-  max-width: 100%;
+  width: 260px;
+  font-size: 1rem;
 }
 
 .newsletter-form button {
-  padding: 0.75rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   background: #e50914;
   color: #fff;
   border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
   cursor: pointer;
   transition: 0.3s ease;
-  font-weight: bold;
 }
 
 .newsletter-form button:hover {
   background: #b30010;
+}
+
+.newsletter-form button i {
+  margin-right: 0.5rem;
 }
 
 footer {
@@ -77,17 +88,41 @@ footer {
   text-align: center;
 }
 
-footer .socials {
+footer .social-icons {
   margin-bottom: 1rem;
 }
 
-footer .socials a {
-  margin: 0 0.5rem;
+footer .social-icons a {
+  margin: 0 0.6rem;
   color: #fff;
+  font-size: 1.4rem;
   text-decoration: none;
-  font-weight: bold;
+  transition: 0.3s ease;
 }
 
-footer .socials a:hover {
+footer .social-icons a:hover {
+  color: #e50914;
+}
+
+.main-nav {
+  position: fixed;
+  top: 1.5rem;
+  right: 2rem;
+  display: flex;
+  gap: 2rem;
+  z-index: 1000;
+}
+
+.main-nav a {
+  color: #ffffff;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
   color: #e50914;
 }

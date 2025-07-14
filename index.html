@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,15 +41,11 @@
       flex-direction: row;
       color: red;
       font-size: 6rem;
-      gap: 30px;
+      gap: 60px;
     }
     .hero span {
       font-size: 6rem;
       font-weight: bold;
-    }
-    .triangle-img {
-      width: 90px;
-      height: auto;
     }
     section {
       padding: 100px 20px;
@@ -117,13 +112,24 @@
     .social-icons a {
       margin: 0 12px;
       color: red;
-      font-size: 24px;
+      font-size: 26px;
+    }
+    @media screen and (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        font-size: 3rem;
+        gap: 20px;
+        text-align: center;
+      }
+      .nav-icons a {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <div style="font-size: 1.5rem; font-weight: bold; color: red; letter-spacing: 8px;">M△H XX</div>
+    <div style="font-size: 1.5rem; font-weight: bold; color: red; letter-spacing: 8px;">MΔH XX</div>
     <div class="nav-icons">
       <a href="#music">Music</a>
       <a href="#videos">Videos</a>
@@ -134,7 +140,7 @@
 
   <section class="hero" id="home">
     <span>M</span>
-    <img src="pyramid.png" alt="Triangle" class="triangle-img" />
+    <span>Δ</span>
     <span>H</span>
     <span>X</span>
     <span>X</span>
@@ -181,7 +187,7 @@
     </div>
     <div class="social-icons">
       <a href="https://instagram.com/prodmohxx" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://x.com/prodmohxx" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://x.com/prodmohxx" target="_blank"><i class="fab fa-twitter"></i></a>
       <a href="https://youtube.com/@prodmohxx" target="_blank"><i class="fab fa-youtube"></i></a>
       <a href="https://tiktok.com/@prodmohxx" target="_blank"><i class="fab fa-tiktok"></i></a>
       <a href="#"><i class="fab fa-spotify"></i></a>

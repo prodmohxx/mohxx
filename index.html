@@ -1,1 +1,168 @@
-<!-- Final version of MOHXX Main Site -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MOHXX</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #f34c26;
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 0.05em;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #000;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #f34c26;
+    }
+    nav a {
+      color: #f34c26;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 0.9rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .icon-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: #f34c26;
+    }
+    .section {
+      padding: 100px 30px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.95);
+      padding-top: 80px;
+    }
+    .modal-content {
+      max-width: 500px;
+      margin: auto;
+      background-color: #111;
+      padding: 40px 30px;
+      color: #f34c26;
+      border: 1px solid #f34c26;
+      text-align: center;
+    }
+    .modal-content input,
+    .modal-content select {
+      width: 100%;
+      padding: 12px;
+      margin: 12px 0;
+      border: none;
+      background: #000;
+      color: #f34c26;
+      border-bottom: 1px solid #f34c26;
+    }
+    .modal-content button {
+      background: #f34c26;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: #f34c26;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">MOHXX</div>
+  <nav>
+    <a href="#music">MUSIC</a>
+    <a href="#videos">VIDEOS</a>
+    <a href="https://mohxx.store" target="_blank">MERCH</a>
+    <a href="#tour">TOUR</a>
+    <a href="#newsletter">STAY UPDATED</a>
+    <button class="icon-btn" onclick="openModal()">✉️</button>
+  </nav>
+</header>
+
+<section id="music" class="section">
+  <h2>MUSIC</h2>
+</section>
+
+<section id="videos" class="section">
+  <h2>VIDEOS</h2>
+</section>
+
+<section id="shop" class="section">
+  <h2>SHOP MOHXX NOW</h2>
+</section>
+
+<section id="tour" class="section">
+  <h2>SHOWS / TOUR</h2>
+</section>
+
+<section id="newsletter" class="section">
+  <h2>WRITE YOUR EMAIL TO SUBSCRIBE FOR NEW RELEASES</h2>
+  <form>
+    <input type="email" placeholder="Your email address" required />
+    <button type="submit">SUBSCRIBE</button>
+  </form>
+</section>
+
+<div id="emailModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>GET UPDATES</h2>
+    <input type="email" placeholder="Email" required>
+    <input type="text" placeholder="ZIP or Postal Code">
+    <select required>
+      <option value="">Choose Country</option>
+      <option value="us">United States</option>
+      <option value="uk">United Kingdom</option>
+      <option value="ca">Canada</option>
+    </select>
+    <button>SUBSCRIBE</button>
+  </div>
+</div>
+
+<script>
+  function openModal() {
+    document.getElementById("emailModal").style.display = "block";
+  }
+  function closeModal() {
+    document.getElementById("emailModal").style.display = "none";
+  }
+</script>
+
+</body>
+</html>

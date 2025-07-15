@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>M△H XX</title>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -27,10 +28,10 @@
       z-index: 1000;
     }
     .logo {
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: bold;
       color: red;
-      letter-spacing: 8px;
+      letter-spacing: 10px;
     }
     .nav-icons {
       display: flex;
@@ -53,7 +54,6 @@
       width: 25px;
       background: white;
     }
-
     @media screen and (max-width: 768px) {
       .nav-icons {
         display: none;
@@ -72,7 +72,6 @@
         display: flex;
       }
     }
-
     .hero {
       background: #000;
       display: flex;
@@ -83,10 +82,6 @@
       color: red;
       font-size: 6rem;
       gap: 60px;
-    }
-    .hero span {
-      font-size: 6rem;
-      font-weight: bold;
     }
     section {
       padding: 100px 20px;
@@ -167,18 +162,12 @@
       <a href="#newsletter">Newsletter</a>
     </div>
     <div class="menu-toggle" onclick="toggleMenu(this)">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </div>
   </header>
 
   <section class="hero" id="home">
-    <span>M</span>
-    <span>△</span>
-    <span>H</span>
-    <span>X</span>
-    <span>X</span>
+    <span>M</span><span>△</span><span>H</span><span>X</span><span>X</span>
   </section>
 
   <section id="music" class="section">
@@ -242,7 +231,6 @@
         btn.textContent = 'TERMS';
       }
     }
-
     function toggleMenu(toggleBtn) {
       const navMenu = document.getElementById('navMenu');
       navMenu.classList.toggle('show');

@@ -25,12 +25,16 @@
       left: 0;
       width: 100%;
       z-index: 1000;
+      flex-wrap: wrap;
     }
     .logo {
       font-size: 1.5rem;
       font-weight: bold;
       color: red;
       letter-spacing: 8px;
+      flex: 1 1 100%;
+      text-align: left;
+      margin-bottom: 10px;
     }
     .nav-icons {
       display: flex;
@@ -70,21 +74,43 @@
       top: 10px;
     }
     @media screen and (max-width: 768px) {
+      header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 15px 20px;
+      }
+      .logo {
+        font-size: 1.3rem;
+        flex: 1 1 100%;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      }
       .nav-icons {
         display: none;
         flex-direction: column;
-        background: black;
+        background-color: black;
         position: absolute;
         top: 60px;
-        right: 20px;
-        padding: 10px;
-        border: 1px solid white;
+        right: 10px;
+        padding: 20px;
+        border-radius: 8px;
+        width: 160px;
+        box-shadow: 0 0 10px rgba(255,255,255,0.1);
+        z-index: 999;
       }
       .nav-icons.show {
         display: flex;
       }
-      .menu-toggle {
-        display: block;
+      .nav-icons a {
+        margin: 10px 0;
+        font-size: 16px;
+        text-align: right;
       }
     }
     .hero {
@@ -101,6 +127,16 @@
     .hero span {
       font-size: 6rem;
       font-weight: bold;
+    }
+    @media screen and (max-width: 500px) {
+      .hero {
+        font-size: 2.5rem;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .hero span {
+        font-size: 3rem;
+      }
     }
     section {
       padding: 100px 20px;
